@@ -28,7 +28,19 @@ async function getPosts() {
     document.write('This are all posts',data[0].title)
 }
 getPosts()
-
+//delete a post
+async function deletePost(){
+    const response = await fetch('https://jsonplaceholder.typicode.com/posts/1', {
+        METHOD: 'DELETE',
+        BODY: JSON.stringify({
+            userId: 1,
+        }),
+        headers: {
+            'Content-type': 'application/json',
+        }
+    })
+}
+deletePost();
 
 //get a single post
 async function getOnePost(){
