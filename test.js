@@ -1,0 +1,1 @@
+console.log(Sum(Range(1, 10)));
