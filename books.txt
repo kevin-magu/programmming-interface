@@ -1,1 +1,4 @@
 1. Master Yuan-Ma, The Book of Programming
+
+- values are stored in  a memory
+-
