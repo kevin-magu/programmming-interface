@@ -6,4 +6,7 @@ function factorial(n){
         return factorial (n-1) * n;
     }
 }
-console.log( 'Testing a factorial number',factorial(8));
+const fs = require('fs');
+
+//unary operators
+console.log(false || !false);
