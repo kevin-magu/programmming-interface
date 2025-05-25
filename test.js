@@ -31,4 +31,3 @@ console.log("Luigi's Balance is : ", LuigisDebtBalance);
 let man = 'Kevin', woman = 'Wanjiru', child = 'JOhn';
 console.log(man,woman,child)
 
-prompt('Hello kitty');

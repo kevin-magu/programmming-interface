@@ -8,15 +8,46 @@
 <body>
 
 <button class="name-button">Enter your name</button>
-<h1 class="userName"></h1>
-<script>
-const nameButton = document.getElementsByClassName('name-button');
-const userName = document.getElementsByClassName('userName');
+<h1 class="userName"></h1> 
 
-nameButton.addEventListener('click', function(){
-    let userInput = prompt("Enter your name:");
-    userName.innerHTML = userInput;
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+    const nameButton = document.querySelector('.name-button');
+    const userName = document.querySelector('.userName');
+    
+    nameButton.addEventListener('click', function(){
+    let userInput = Number(prompt("Enter your name:"));
+    !Number.isNaN(userInput) ? userName.innerHTML = 'The square of '+ userInput + ' is ' +  userInput * userInput : alert('Please input a number :)')
+    });
+
+let startingNumber = 0
+    for(let i= startingNumber; i <= 12; i++){
+        if(i % 2 == 0){
+            console.log(i)
+        }
+    }
+    while(startingNumber <= 12){
+    console.log(startingNumber);
+    startingNumber = startingNumber + 2;
+}
+
+switch (prompt("What is the current weather?")){
+    case "rainy":
+        console.log("Wear some jackets poockie");
+        break;
+    case "sunny":
+        console.log("wear some summer clothes");
+        break;
+
+    default:
+        console.log('well, wear whatever you like in that weather. pajamas? idk')
+}
+
+
 });
+
+
+
 </script>   
 </body>
 </html>
