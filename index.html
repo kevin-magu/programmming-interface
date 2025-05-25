@@ -7,6 +7,16 @@
 </head>
 <body>
 
-<script src="./methods.js"></script>   
+<button class="name-button">Enter your name</button>
+<h1 class="userName"></h1>
+<script>
+const nameButton = document.getElementsByClassName('name-button');
+const userName = document.getElementsByClassName('userName');
+
+nameButton.addEventListener('click', function(){
+    let userInput = prompt("Enter your name:");
+    userName.innerHTML = userInput;
+});
+</script>   
 </body>
 </html>
